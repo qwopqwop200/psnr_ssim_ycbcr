@@ -148,8 +148,8 @@ def calculate_ssim(img1,img2,crop_border,input_order='HWC',test_y_channel=False)
 
 def main():
     # -------------------------------------------------------------------------
-    folder_gt = 'C:/Users/qwopq/Downloads/Set5/Set5/original'
-    folder_restored = 'C:/Users/qwopq/Downloads/Set5/Set5/LR'
+    folder_gt = 'C:/Users/user/Downloads/Set5/Set5/original'
+    folder_restored = 'C:/Users/user/Downloads/Set5/Set5/LR'
     crop_border = 0
     suffix = '_x4_bicubic'
     # -------------------------------------------------------------------------
