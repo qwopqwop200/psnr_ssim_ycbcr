@@ -144,8 +144,9 @@ def calculate_ssim(img1,img2,crop_border,input_order='HWC',test_y_channel=False)
     for i in range(img1.shape[2]):
         ssims.append(_ssim(img1[..., i], img2[..., i]))
     return np.array(ssims).mean()
-    
-if __name__ == "__main__":
+
+
+def main():
     # -------------------------------------------------------------------------
     folder_gt = 'C:/Users/qwopq/Downloads/Set5/Set5/original'
     folder_restored = 'C:/Users/qwopq/Downloads/Set5/Set5/LR'
@@ -170,3 +171,6 @@ if __name__ == "__main__":
         ssim = calculate_ssim(img_gt * 255,img_restored * 255,crop_border=crop_border,input_order='HWC')
         psnr_all.append(psnr)
         ssim_all.append(ssim)
+
+if __name__ == "__main__":
+    main()
